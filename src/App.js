@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import fetchData from "./components/api";
 import Loading from "./components/loading";
 import Grid from "./components/repo-grid";
+import GithubLogo from "./components/github";
 
 class App extends React.Component {
   constructor(props) {
@@ -55,6 +56,7 @@ class App extends React.Component {
     }
     return (
       <div>
+        <GithubLogo />
         <Navbar getLanguage={this.handleActiveLanguage} />
         <h2 id="title"> {this.state.active}</h2>
         <Grid repos={this.state.repos} />
