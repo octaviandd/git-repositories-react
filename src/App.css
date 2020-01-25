@@ -107,4 +107,10 @@ img {
   text-decoration: none;
   color: black;
   font-size: 40px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#logo i:hover {
+  transform: scale(1.4, 1.4);
 }
