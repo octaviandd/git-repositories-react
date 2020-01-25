@@ -16,12 +16,17 @@ class Grid extends React.Component {
             ({ name, owner, stargazers_count, html_url }) => (
               <li key={name} id="main-li">
                 <ul>
-                  <li>
+                  <li style={{ marginTop: "5px" }}>
                     <a href={html_url}>{name}</a>
                   </li>
-                  <li>@{owner.login}</li>
-                  <li>{stargazers_count}stars</li>
-                  <li>
+                  <li style={{ fontStyle: "italic", marginBottom: "10px" }}>
+                    @{owner.login}
+                  </li>
+                  <li style={{ marginBottom: "10px" }}>
+                    {stargazers_count}
+                    <i class="fas fa-star"></i>
+                  </li>
+                  <li style={{ marginBottom: "5px" }}>
                     <img src={owner.avatar_url}></img>
                   </li>
                 </ul>
