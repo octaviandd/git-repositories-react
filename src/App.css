@@ -31,6 +31,17 @@
   margin: 30px;
   border: 1px solid black;
   width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#main-li:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
 li {
@@ -39,6 +50,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #title {
@@ -73,6 +85,9 @@ li {
   border-right: 1px solid black;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  padding-left: 6px;
+  padding-right: 6px;
+  cursor: pointer;
 }
 
 img {
