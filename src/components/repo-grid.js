@@ -21,6 +21,9 @@ class Grid extends React.Component {
                   </li>
                   <li>@{owner.login}</li>
                   <li>{stargazers_count}stars</li>
+                  <li>
+                    <img src={owner.avatar_url}></img>
+                  </li>
                 </ul>
               </li>
             )
