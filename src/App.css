@@ -35,6 +35,10 @@
 
 li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #title {
@@ -69,4 +73,21 @@ li {
   border-right: 1px solid black;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#logo {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+#logo i {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
 }
