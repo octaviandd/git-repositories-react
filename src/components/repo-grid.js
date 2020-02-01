@@ -16,7 +16,7 @@ class Grid extends React.Component {
             ({ name, owner, stargazers_count, html_url }) => (
               <li key={name} id="main-li">
                 <ul>
-                  <li style={{ marginTop: "5px" }}>
+                  <li style={{ marginTop: "6px" }}>
                     <a href={html_url}>{name}</a>
                   </li>
                   <li style={{ fontStyle: "italic", marginBottom: "10px" }}>
